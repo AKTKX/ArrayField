@@ -2303,7 +2303,7 @@ function ArrayFieldLibrary:CreateWindow(Settings)
 					end
 
 					local Success, Response = pcall(function()
-						DropdownSettings.Callback(Option)
+						DropdownSettings.Callback(CurrentOption)
 					end)
 					if not Success then
 						Error('Callback Error')
